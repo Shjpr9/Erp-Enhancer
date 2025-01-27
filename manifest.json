@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Erp Enhancer",
+    "version": "1.0.0",
+  
+    "description": "Improve the erp styling for better experience!",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://erp.pgu.ac.ir/*"],
+        "css": ["styles.css"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  
