@@ -11,9 +11,14 @@ function resizeBoxContent(iframeDocument) {
 }
 
 function applyAdditionalStyles(iframeDocument) {
-  const headerTableRow = iframeDocument.querySelector("table.mxgrid_header tr").childNodes;
-  const firstTableRow = iframeDocument.querySelector("div#mxgrid_table_container tr").childNodes;
-  iframeDocument.querySelector("div#mxgrid_table_container").style = "height:710px !important; width:100% !important";
+  const headerTableRow = iframeDocument.querySelector(
+    "table.mxgrid_header tr"
+  ).childNodes;
+  const firstTableRow = iframeDocument.querySelector(
+    "div#mxgrid_table_container tr"
+  ).childNodes;
+  iframeDocument.querySelector("div#mxgrid_table_container").style =
+    "height:710px !important; width:100% !important";
 
   // change course name column
   firstTableRow[2].style = "width: 220px;";
